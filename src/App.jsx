@@ -25,9 +25,9 @@ const App = () => {
     const liquido = bruto - (bruto * (porafp / 100)) - vsalud + (cargasFam * 10000);
 
     let clasificacion;
-    if (liquido > 1500000)      clasificacion = "Sueldo Alto";
+    if (liquido > 1500000) clasificacion = "Sueldo Alto";
     else if (liquido >= 750000) clasificacion = "Sueldo Promedio";
-    else                        clasificacion = "Sueldo Base / Bajo";
+    else clasificacion = "Sueldo Base / Bajo";
 
     setResultado(liquido);
     setEstado(clasificacion);
